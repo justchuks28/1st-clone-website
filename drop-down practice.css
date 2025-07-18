@@ -1,0 +1,201 @@
+body {
+    font-family: ;
+    text-align:center;
+}
+
+/* For the Hamburger menu drop down*/
+.navbar{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    color: #2b58ff;
+    padding: 15px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-icon{
+    cursor: pointer;
+    display: none; /* hidden on desktop */  
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a{
+    color : black;
+    text-decoration: none;  
+}
+
+/* Responsive: Hide nav links by default on mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  
+.nav-links {
+    display: none; 
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right:20px;
+    width: 150px;
+    border-radius: 8px;
+    overflow: hidden;  
+}
+
+.nav-links.active{
+    display: flex;
+}
+
+.nav-links li {
+    border-bottom: 1px solid #444;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+  line-height: 1.5; /* 1.5 times the font size */
+}
+
+
+.logo{
+    border:0;
+    background: #3e8cb9;
+    border-radius:30px;
+    height:40px;
+    width: 210px;
+    color: #ffffff; 
+    font-size:20px;  
+    font-weight: 2px;
+}
+
+.donate{
+    font-size: 18px;
+    border-radius:29px;
+    background:#b9631f;
+    color:#ffffff;
+    width:130px;
+    height:38px;   
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#intro{
+    color:#ffffff;
+    background-image:#40b6ff; 
+    padding:60px;
+    border-color: #ffffff;
+    background-image: url('../images/1st.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity:50%;
+}
+
+.join{
+    font-size: 18px;
+    border-radius:29px;
+    background:#b9631f;
+    color:#ffffff;
+    width:180px;
+    height:42px; 
+    border: 3px solid white;
+}
+
+.learnmore{
+    font-size: 18px;
+    border-radius:29px;
+    background:#b9631f;
+    color:#ffffff;
+    width:180px;
+    height:48px; 
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* white shadow with transparency */
+}
+
+.jointoday{
+    font-size: 18px;
+    border-radius:29px;
+    background:#b9631f;
+    color:#ffffff;
+    width:180px;
+    height:42px;   
+    border: 3px solid white;
+}
+
+.reachus{
+    font-size: 18px;
+    border:0;
+    background:#408cff;
+    color:#ffffff;
+    width:100px;
+    height:35px;   
+}
+
+#blackbg{
+    background: black;
+    color:#ffffff;
+    padding:80px;
+    max-width:100%;
+    position:relative;
+    z-index:1;
+    }
+
+#float{
+    background:#40b6ff;
+    padding:60px;
+    width: 50%; /* or any fixed width */
+    margin: 0 auto;
+    border-radius:30px;    
+    position:relative;
+    z-index:2;
+    bottom: -50px;
+}
+
+img{
+    border-radius:30px;   
+}
+
+.section{
+  background-image: url('../d.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Use media queries to adapt to different screen sizes */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
